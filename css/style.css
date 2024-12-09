@@ -1,0 +1,216 @@
+html{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.button {
+    text-decoration: none;
+    padding: 100px;
+    font-size: 50px;
+    text-shadow: 2px 2px 0px black;
+    border-radius: 10vw; 
+    background-size:cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 10vw;
+    margin-top: 30px;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.transition{
+    transform: scale(1);
+    transition: 0.1s ease-in-out;
+}
+.transition:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    z-index: 1000;
+}
+.transition:active{
+    transform:scale(0.9);
+    transition: 0.1s ease-in-out
+}
+
+body {
+    background-image: url(../img/zeldamenu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin:0;
+}
+
+.lienpage1 {
+    background-image:url(../img/evil_statue.png);
+}
+.lienpage2 {
+    background-image:url(../img/templestatue.png)
+}
+.lienpage3 {
+    background-image: url(../img/phantom.png);
+}
+.lienpage4 {
+    background-image: url(../img/time_temple.png);
+}
+.light {
+    text-shadow: 0px 0px 5px#fff;
+}
+h1 {
+    font-size: 50px;
+    margin-top: 60px;
+}
+h2 {
+    font-size: 30px;
+}
+h1,h2 {
+    text-align:center;
+}
+
+.fleche-retour{
+    position: fixed;
+    top: 3px;
+    margin-left: 5px;
+}
+.fleche-haut{
+    position: fixed;
+    bottom: 10px;
+    left:5px;
+}
+.page{
+    color: rgb(224, 224, 224);
+    background-color: rgba(27, 27, 27, 0.938);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    font-size: large;
+}
+iframe{
+    height: 315px;
+    max-width: 560px;
+}
+.right-element,.left-element{
+    width: 49%;
+}
+.elements{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.right-element{order: 2;}
+.left-element{order: 1;}
+section{
+    margin-bottom: 10%;
+}
+h1,h2{font-family:'hylia-serif';}
+@font-face {
+    font-family: hylia-serif;
+    src: url(../fonts/HyliaSerifBeta-Regular.otf);
+}
+.scroll1{
+    animation: disappear linear;
+    animation-timeline: view();
+    animation-range-start: 60%;
+    animation-range-end: 100%;
+}
+.scroll2{
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: 0;
+    animation-range-end: 40%;
+    margin-bottom: 10%;
+}
+@keyframes disappear {
+    from{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes reveal {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+footer{
+    background-color: rgb(2, 77, 104);
+    color: white;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.intro{
+    font-size: 20px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #fff;
+    margin: 10%;
+    margin-left:0;
+    margin-right: 0;
+    background-color: #ffffffc6;
+    padding:3%;
+}
+a{
+    color: #fff;
+}
+
+.sommaire{
+    margin: 10%;
+    padding:10px;
+    border-radius: 10px;
+    border: #fff;
+    border-style:groove;
+    background-color: #5555558a;
+}
+.menu-container{
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    background-color: #e4e4e4;
+}
+.menu{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.menu-item{
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size:20px;
+    text-decoration: none;
+    color: rgb(1, 95, 121);
+}
+.sommaire li{
+    margin: 10px;
+}
+nav li{
+    list-style:none;
+}
+.menu-item:hover{
+    color: black;
+    transition: 0.1s;
+}
+.black{
+    color: black;
+}
